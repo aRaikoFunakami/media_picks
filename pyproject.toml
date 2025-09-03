@@ -1,0 +1,30 @@
+[project]
+name = "media_picks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.27",
+    "langchain-openai>=0.3.29",
+    "langchain-tavily>=0.2.11",
+    "langchainhub>=0.1.21",
+    "langdetect>=1.0.9",
+    "sudachidict-core>=20250515",
+    "sudachipy>=0.6.10",
+    "starlette>=0.27.0",
+    "uvicorn>=0.24.0",
+    "pydantic>=2.0",
+    "websockets>=13.0",
+    "colorama>=0.4.6",
+    "sentence-transformers>=5.1.0",
+    "chromadb>=1.0.20",
+    "sqlitedict>=2.1.0",
+    "aiohttp>=3.8.0",
+]
+
+[project.scripts]
+cine-bot-server = "cine_bot_server:main"
+cine-bot-client = "cine_bot_client:main"
+cine-bot-demo = "demo_cine_bot:main"
